@@ -6,7 +6,7 @@ This module is used for testing the functions within the pyhpeimc.plat.alarms mo
 
 from unittest import TestCase
 
-from pyhpeimc.plat.alarms import *
+from pyarubaimc.plat.alarms import *
 from test_machine import auth
 
 

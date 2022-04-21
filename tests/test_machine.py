@@ -4,7 +4,7 @@ specific functionality again. If you do not have a specific vendors device, or d
 a specific vendors device, change the value of that specific variable to None and all
 tests associated with that specific vendor will automatically be skipped."""
 
-from pyhpearuba.auth import *
+from pyarubaimc.auth import *
 
 auth = arubaAuth("http://", "10.101.0.203", "8080", "admin", "admin")
 

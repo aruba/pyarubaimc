@@ -5,7 +5,7 @@ This module is used for testing the functions within the pyhpeimc.plat.alarms mo
 """
 
 from unittest import TestCase
-from pyhpeimc.objects import *
+from pyarubaimc.objects import *
 from test_machine import *
 
 
@@ -171,5 +171,3 @@ class TestIPScope(TestCase):
             hosts = [host['ip'] for host in Scope1.hosts]
             self.assertNotIn(term_access_ipam_host, hosts)
         delete_ip_scope(term_access_ipam_network_scope, auth.creds, auth.url)
-
-

@@ -8,7 +8,7 @@ from unittest import TestCase
 
 from nose.plugins.skip import SkipTest
 
-from pyhpeimc.plat.device import *
+from pyarubaimc.plat.device import *
 from test_machine import *
 
 
@@ -3398,5 +3398,3 @@ class TestSet_inteface_down_Juniper_Router(TestCase):
         set_inteface_up('9', auth.creds, auth.url, devip=Juniper_Router)
         self.assertIs(type(int_down_response), int)
         self.assertIs(int_down_response, 204)
-
-
