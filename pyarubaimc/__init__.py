@@ -9,6 +9,6 @@ pyarubaimc is a python binding for working with Aruba IMC 7.3 or greater.
 
 Copyright (c) 2022 Aruba, a Hewlett Packard Enterprise company
 
-version 0.1.1 - init release.
+version 0.1.2 - beta.
 """
 from pyarubaimc.plat import (auth, objects)
