@@ -16,3 +16,5 @@ What's Changed:
 0.1.0 Initial Release
 
 0.1.1 Fixed import under __inity__.py file    RK 04212022
+
+0.1.2 Fixed import under __inity__.py file    RK 04212022
