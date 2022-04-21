@@ -13,7 +13,7 @@ import json
 
 import requests
 
-from pyhpeimc.auth import HEADERS
+from pyarubaimc.auth import HEADERS
 
 
 # This section contains functions which operate at the system level
