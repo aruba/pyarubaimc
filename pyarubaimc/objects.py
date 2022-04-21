@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # coding=utf-8
-# author: @netmanchris
+# author: @netwookie
 # -*- coding: utf-8 -*-
 """
 This module contains class objects for working with the specific types of network

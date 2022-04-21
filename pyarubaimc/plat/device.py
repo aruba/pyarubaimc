@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # coding=utf-8
-# author: @netmanchris
+# author: @netwookie
 # -*- coding: utf-8 -*-
 """
 This module contains functions for working with the device capabilities
