@@ -2,12 +2,12 @@ from distutils.core import setup
 setup(
     name = 'pyarubaimc',
     packages = ['pyarubaimc'],
-    version = '0.1.2',
+    version = '0.1.3',
     description = 'A python binding to work with the Aruba IMC API',
     author = 'Rick Kauffman',
     author_email = 'rick@rickkauffman.com',
     url = 'https://github.com/aruba/pyarubaimc',
-    download_url = 'https://github.com/aruba/pyarubaimc/archive/refs/tags/v0.1.2.tar.gz',
+    download_url = 'https://github.com/aruba/pyarubaimc/archive/refs/tags/v0.1.3.tar.gz',
     keywords = ['IMC', 'api', 'python'],
     install_requires=[
           'requests',
