@@ -11,4 +11,4 @@ Copyright (c) 2022 Aruba, a Hewlett Packard Enterprise company
 
 version 0.1.1 - init release.
 """
-from pyarubaimc.plat import (alarms, device)
+from pyarubaimc.plat import (auth, objects)

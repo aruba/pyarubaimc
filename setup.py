@@ -7,7 +7,7 @@ setup(
     author = 'Rick Kauffman',
     author_email = 'rick@rickkauffman.com',
     url = 'https://github.com/aruba/pyarubaimc',
-    download_url = 'https://github.com/aruba/pyarubaimc/archive/refs/tags/v0.1.0.tar.gz',
+    download_url = 'https://github.com/aruba/pyarubaimc/archive/refs/tags/v0.1.1.tar.gz',
     keywords = ['IMC', 'api', 'python'],
     install_requires=[
           'requests',
