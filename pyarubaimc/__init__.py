@@ -11,4 +11,4 @@ Copyright (c) 2022 Aruba, a Hewlett Packard Enterprise company
 
 version 0.1.3 - beta.
 """
-from pyarubaimc import (auth, objects)
+from pyarubaimc import (auth, objects, device, alarms)

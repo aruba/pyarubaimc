@@ -14,7 +14,7 @@ import json
 import requests
 
 from pyarubaimc.auth import HEADERS
-from pyarubaimc.plat.device import get_dev_details
+from pyarubaimc.device import get_dev_details
 
 
 def get_dev_alarms(auth, url, devid=None, devip=None):

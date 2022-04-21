@@ -10,8 +10,8 @@ rely on various other functions from within this library.
 """
 
 # This section imports required libraries
-from pyarubaimc.plat.device import *
-from pyarubaimc.plat.alarms import *
+from pyarubaimc.device import *
+from pyarubaimc.alarms import *
 
 from pyarubaimc.auth import HEADERS
 

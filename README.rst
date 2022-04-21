@@ -22,3 +22,5 @@ What's Changed:
 0.1.4 Fixed import under __inity__.py file    RK 04212022
 
 0.1.5 Fixed import under __inity__.py file    RK 04212022
+
+0.1.6 Fixed import under __inity__.py file    RK 04212022
