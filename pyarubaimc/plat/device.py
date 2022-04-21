@@ -209,13 +209,11 @@ def get_all_devs(auth, url, network_address=None, category=None, label=None):
     else:
         category = ''
     f_url = url + base_url + str(network_address) + str(label) + str(category) + end_url
-    print(f_url)
     response = requests.get(f_url, auth=auth, headers=HEADERS)
     try:
         if response.status_code == 200:
             dev_details = (json.loads(response.text))
             if len(dev_details) == 0:
-                print("Device not found")
                 return "Device not found"
             elif type(dev_details['device']) is dict:
                 return [dev_details['device']]
@@ -264,7 +262,6 @@ def get_dev_details(ip_address, auth, url):
         if response.status_code == 200:
             dev_details = (json.loads(response.text))
             if len(dev_details) == 0:
-                print("Device not found")
                 return "Device not found"
             elif isinstance(dev_details['device'], list):
                 for i in dev_details['device']:
@@ -770,7 +767,6 @@ def set_interface_down(ifindex, auth, url, devid=None, devip=None):
     f_url = url + set_int_down_url
     try:
         response = requests.put(f_url, auth=auth, headers=HEADERS)
-        print(response.status_code)
         if response.status_code == 204:
             return response.status_code
     except requests.exceptions.RequestException as error:

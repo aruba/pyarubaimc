@@ -63,7 +63,6 @@ class IMCAuth(requests.auth.HTTPDigestAuth):
         try:
             response = requests.get(f_url, auth=auth, headers=HEADERS, verify=False)
             if response.status_code != 200:  # checks for valid IMC credentials
-                print("Error:\n" + "Error: \n You're credentials are invalid. Please try again\n\n")
                 set_imc_creds()
             return response.status_code
         except requests.exceptions.RequestException as error:
@@ -109,36 +108,9 @@ def set_imc_creds(h_url=None, imc_server=None, imc_port=None, imc_user=None, imc
     f_url = url + test_url
     try:
         response = requests.get(f_url, auth=auth, headers=HEADERS, verify=False)
-        print(response.status_code)
         if response.status_code != 200:  # checks for valid IMC credentials
-            print("Error: \n You're credentials are invalid. Please try again\n\n")
             set_imc_creds()
         else:
-            print("You've successfully access the IMC eAPI")
             return auth
     except requests.exceptions.RequestException as error:
-        print("Error:\n" + str(error))
-        print("\n\nThe IMC server address is invalid. Please try again\n\n")
         set_imc_creds()
-
-
-# This section contains misc helper functions as needed.
-
-
-def print_to_file(object_name):
-    """
-    Function takes in object of type str, list, or dict and prints out to current working
-    directory as pyoutput.txt
-    :param:  Object: object of type str, list, or dict
-    :return: No return. Just prints out to file handler and save to current working directory as
-    pyoutput.txt
-    """
-    with open('pyoutput.txt', 'w') as filehandler:
-        output = None
-        if isinstance(object_name, list):
-            output = json.dumps(object, indent=4)
-        if isinstance(object_name, dict):
-            output = json.dumps(object, indent=4)
-        if isinstance(object_name, str):
-            output = object_name
-        filehandler.write(output)
