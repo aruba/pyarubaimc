@@ -195,7 +195,7 @@ def get_all_devs(auth, url, network_address=None, category=None, label=None):
 
     """
     base_url = "/imcrs/plat/res/device?resPrivilegeFilter=false"
-    end_url = "&start=0&size=1000&orderBy=id&desc=false&total=false"
+    end_url = "&start=0&size=6000&orderBy=id&desc=false&total=false"
     if network_address:
         network_address = "&ip=" + str(network_address)
     else:
